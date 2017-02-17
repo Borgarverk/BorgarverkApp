@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">BorgarverkApp</string>
+
+	<!-- CARS -->
+	<string name="car1">ML-455</string>
+	<string name="car2">MU-510</string>
+	<string name="car3">BZ-963</string>
+	<string name="car4">US-553</string>
+	<string name="car5">AZ-R92</string>
+
+	<!-- STATIONS -->
+	<string name="station1">Akureyri</string>
+	<string name="station2">Hlaðbær Colas</string>
+	<string name="station3">Höfði</string>
+	<string name="station4">Ísafjöður</string>
+	<string name="station5">Reyðarfjörður</string>
+	<string name="station6">Sauðárkrókur</string>
+
+	<string-array name="cars">
+		<item>ML-455</item>
+		<item>MU-510</item>
+		<item>BZ-963</item>
+		<item>US-553</item>
+		<item>AZ-R92</item>
+	</string-array>
+
+	<string-array name="stations">
+		<item>Akureyri</item>
+		<item>Hlaðbær Colas</item>
+		<item>Höfði</item>
+		<item>Ísafjörður</item>
+		<item>Reyðarfjörður</item>
+		<item>Sauðárkrókur</item>
+	</string-array>
+</resources>
+
