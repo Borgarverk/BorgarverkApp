@@ -4,6 +4,13 @@ namespace Borgarverk.Core.ViewModels
 {
 	public class FormEntryViewModel : MvxViewModel
 	{
+		private Form model;
+
+		public FormEntryViewModel()
+		{
+			model = new Form();
+		}
+
 		private string idNo = "";
 		public string IdNo
 		{
@@ -19,7 +26,7 @@ namespace Borgarverk.Core.ViewModels
 			}
 		}
 
-		private string car;
+		private string car = "";
 		public string Car
 		{
 			get
@@ -34,7 +41,7 @@ namespace Borgarverk.Core.ViewModels
 			}
 		}
 
-		private string station;
+		private string station = "";
 		public string Station
 		{
 			get
@@ -49,7 +56,7 @@ namespace Borgarverk.Core.ViewModels
 			}
 		}
 
-		private string roadLength = "";
+		private string roadLength;
 		public string RoadLength
 		{
 			get
@@ -64,7 +71,7 @@ namespace Borgarverk.Core.ViewModels
 			}
 		}
 
-		private string roadWidth = "";
+		private string roadWidth;
 		public string RoadWidth
 		{
 			get
@@ -79,7 +86,7 @@ namespace Borgarverk.Core.ViewModels
 			}
 		}
 
-		private string roadArea = "";
+		private string roadArea;
 		public string RoadArea
 		{
 			get
@@ -94,7 +101,7 @@ namespace Borgarverk.Core.ViewModels
 			}
 		}
 
-		private string tarQty = "";
+		private string tarQty;
 		public string TarQty
 		{
 			get
@@ -109,7 +116,7 @@ namespace Borgarverk.Core.ViewModels
 			}
 		}
 
-		private string qtyRate = "";
+		private string qtyRate;
 		public string QtyRate
 		{
 			get
@@ -124,16 +131,46 @@ namespace Borgarverk.Core.ViewModels
 			}
 		}
 
-		MvxCommand confirmForm;
-
 		public IMvxCommand ConfirmForm
 		{
 			get { return new MvxCommand(ConstructForm); }
 		}
 
+		public IMvxCommand GetCar
+		{
+			get { return new MvxCommand<string>(AddCar); }
+		}
+
+		public IMvxCommand GetStation
+		{
+			get { return new MvxCommand<string>(AddStation); }
+		}
+
 		void ConstructForm()
 		{
 			System.Diagnostics.Debug.WriteLine("CLICKED!");
+			model.idNo = IdNo;
+			model.car = Car;
+			model.station = Station;
+			model.roadLength = RoadLength;
+			model.roadWidth = RoadWidth;
+			model.roadArea = RoadArea;
+			model.tarQty = TarQty;
+			model.qtyRate = QtyRate;
+		}
+
+		void AddCar(string num)
+		{
+			System.Diagnostics.Debug.WriteLine("CLICKED CAR BUTTON!");
+			System.Diagnostics.Debug.WriteLine(num);
+			model.car = num;
+		}
+
+		void AddStation(string num)
+		{
+			System.Diagnostics.Debug.WriteLine("CLICKED STATION BUTTON!");
+			System.Diagnostics.Debug.WriteLine(num);
+			model.station = num;
 		}
 	}
 }

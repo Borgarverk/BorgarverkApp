@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="45dp">
+    android:padding="50dp">
     <LinearLayout
         android:orientation="vertical"
         android:minWidth="25px"
@@ -36,8 +36,7 @@
                 android:id="@+id/idNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Færslunúmer"
-                local:MvxBind="Text IdNo" />
+                android:hint="Færslunúmer" />
         </android.support.design.widget.TextInputLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -70,37 +69,56 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/carButtonLayout"
-            android:showDividers="none">
-            <Button
+            android:showDividers="none"
+            android:baselineAligned="false">
+            <ToggleButton
                 android:text="@string/car1"
                 android:id="@+id/car1Button"
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:layout_weight="1" />
-            <Button
+                android:layout_weight="1"
+                android:background="@drawable/toggleButtonSelector"
+                local:MvxBind="Click GetCar, CommandParameter=ML-455" />
+            <ToggleButton
                 android:text="@string/car2"
                 android:id="@+id/car2Button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
-            <Button
+                android:layout_weight="1"
+                local:MvxBind="Click GetCar, CommandParameter=MU-510"
+                android:background="@drawable/toggleButtonSelector"
+                android:textOn="@string/car2"
+                android:textOff="@string/car2" />
+            <ToggleButton
                 android:text="@string/car3"
                 android:id="@+id/car3Button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
-            <Button
+                android:layout_weight="1"
+                android:background="@drawable/toggleButtonSelector"
+                local:MvxBind="Click GetCar, CommandParameter=BZ-963"
+                android:textOn="@string/car3"
+                android:textOff="@string/car3" />
+            <ToggleButton
                 android:text="@string/car4"
                 android:id="@+id/car4Button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
-            <Button
+                android:layout_weight="1"
+                android:background="@drawable/toggleButtonSelector"
+                local:MvxBind="Click GetCar, CommandParameter=US-553"
+                android:textOn="@string/car4"
+                android:textOff="@string/car4" />
+            <ToggleButton
                 android:text="@string/car5"
                 android:id="@+id/car5Button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:background="@drawable/toggleButtonSelector"
+                local:MvxBind="Click GetCar, CommandParameter=AZ-R92"
+                android:textOn="@string/car5"
+                android:textOff="@string/car5" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -147,19 +165,22 @@
                 android:id="@+id/station1Button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                local:MvxBind="Click GetStation, CommandParameter=Akureyri" />
             <Button
                 android:text="@string/station2"
                 android:id="@+id/station2Button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                local:MvxBind="Click GetStation, CommandParameter=Hlaðbær Colas" />
             <Button
                 android:text="@string/station3"
                 android:id="@+id/station3Button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                local:MvxBind="Click GetStation, CommandParameter=Höfði" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -174,19 +195,22 @@
                 android:id="@+id/station4Button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                local:MvxBind="Click GetStation, CommandParameter=Ísafjörður" />
             <Button
                 android:text="@string/station5"
                 android:id="@+id/station5Button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                local:MvxBind="Click GetStation, CommandParameter=Reyðarfjörður" />
             <Button
                 android:text="@string/station6"
                 android:id="@+id/station6Button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                local:MvxBind="Click GetStation, CommandParameter=Sauðárkrókur" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout

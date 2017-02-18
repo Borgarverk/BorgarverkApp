@@ -8,5 +8,12 @@ namespace Borgarverk.Core
 		public FormEntryService()
 		{
 		}
+
+		public Form ConstructForm()
+		{
+			Form model = new Form();
+
+			return model;	
+		}
 	}
 }

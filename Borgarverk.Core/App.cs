@@ -12,8 +12,9 @@ namespace Borgarverk.Core
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
-				
+							
 			var appStart = new CustomAppStart();
-			Mvx.RegisterSingleton<IMvxAppStart>(appStart);        }
+			Mvx.RegisterSingleton<IMvxAppStart>(appStart);        
+		}
     }
 }

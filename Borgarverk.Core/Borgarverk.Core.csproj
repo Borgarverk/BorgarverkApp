@@ -33,6 +33,8 @@
     <Compile Include="ViewModels\FormEntryViewModel.cs" />
     <Compile Include="Services\FormEntryService.cs" />
     <Compile Include="CustomAppStart.cs" />
+    <Compile Include="Services\IFormEntryService.cs" />
+    <Compile Include="Models\Form.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">
@@ -53,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

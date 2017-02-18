@@ -140,6 +140,9 @@
     <AndroidResource Include="Resources\layout\FormEntryView.xml" />
     <AndroidResource Include="Resources\layout\HomeView.xml" />
     <AndroidResource Include="Resources\drawable\logoBorgarverk.png" />
+    <AndroidResource Include="Resources\drawable\toggleButtonSelector.xml" />
+    <AndroidResource Include="Resources\drawable\ToggleButtonOn.xml" />
+    <AndroidResource Include="Resources\drawable\toggleButtonOff.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
