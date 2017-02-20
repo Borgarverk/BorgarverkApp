@@ -9,9 +9,9 @@ namespace Borgarverk.Core
 		{
 		}
 
-		public Form ConstructForm()
+		public FormEntryModel ConstructForm()
 		{
-			Form model = new Form();
+			FormEntryModel model = new FormEntryModel();
 
 			return model;	
 		}

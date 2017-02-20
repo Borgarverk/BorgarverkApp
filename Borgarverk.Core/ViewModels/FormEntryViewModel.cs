@@ -1,19 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using Borgarverk.Core.Services;
 using MvvmCross.Core.ViewModels;
 
 namespace Borgarverk.Core.ViewModels
 {
 	public class FormEntryViewModel : MvxViewModel
 	{
-		private Form model;
-
-		private readonly IDataService _dataService;
+		private FormEntryModel model;
 
 		public FormEntryViewModel()
 		{
-			model = new Form();
+			model = new FormEntryModel();
 		}
 
 		private string idNo = "";

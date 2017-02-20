@@ -47,8 +47,6 @@ namespace Borgarverk.Droid
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::Borgarverk.Droid.Resource.Styleable.MvxListView;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::Borgarverk.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::Borgarverk.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
-			global::MvvmCross.Plugins.Sqlite.Droid.Resource.String.ApplicationName = global::Borgarverk.Droid.Resource.String.ApplicationName;
-			global::MvvmCross.Plugins.Sqlite.Droid.Resource.String.Hello = global::Borgarverk.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Animation
@@ -3153,12 +3151,6 @@ namespace Borgarverk.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f0c002a
-			public const int ApplicationName = 2131492906;
-			
-			// aapt resource value: 0x7f0c0029
-			public const int Hello = 2131492905;
-			
 			// aapt resource value: 0x7f0c0008
 			public const int abc_action_bar_home_description = 2131492872;
 			
@@ -3252,8 +3244,8 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0c001a
 			public const int abc_toolbar_collapse_description = 2131492890;
 			
-			// aapt resource value: 0x7f0c002c
-			public const int app_name = 2131492908;
+			// aapt resource value: 0x7f0c002a
+			public const int app_name = 2131492906;
 			
 			// aapt resource value: 0x7f0c0000
 			public const int appbar_scrolling_view_behavior = 2131492864;
@@ -3261,26 +3253,26 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0c0001
 			public const int bottom_sheet_behavior = 2131492865;
 			
+			// aapt resource value: 0x7f0c002b
+			public const int car1 = 2131492907;
+			
+			// aapt resource value: 0x7f0c002c
+			public const int car2 = 2131492908;
+			
 			// aapt resource value: 0x7f0c002d
-			public const int car1 = 2131492909;
+			public const int car3 = 2131492909;
 			
 			// aapt resource value: 0x7f0c002e
-			public const int car2 = 2131492910;
+			public const int car4 = 2131492910;
 			
 			// aapt resource value: 0x7f0c002f
-			public const int car3 = 2131492911;
-			
-			// aapt resource value: 0x7f0c0030
-			public const int car4 = 2131492912;
-			
-			// aapt resource value: 0x7f0c0031
-			public const int car5 = 2131492913;
+			public const int car5 = 2131492911;
 			
 			// aapt resource value: 0x7f0c0002
 			public const int character_counter_pattern = 2131492866;
 			
-			// aapt resource value: 0x7f0c002b
-			public const int hello = 2131492907;
+			// aapt resource value: 0x7f0c0029
+			public const int hello = 2131492905;
 			
 			// aapt resource value: 0x7f0c0003
 			public const int password_toggle_content_description = 2131492867;
@@ -3300,23 +3292,23 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0c001b
 			public const int search_menu_title = 2131492891;
 			
+			// aapt resource value: 0x7f0c0030
+			public const int station1 = 2131492912;
+			
+			// aapt resource value: 0x7f0c0031
+			public const int station2 = 2131492913;
+			
 			// aapt resource value: 0x7f0c0032
-			public const int station1 = 2131492914;
+			public const int station3 = 2131492914;
 			
 			// aapt resource value: 0x7f0c0033
-			public const int station2 = 2131492915;
+			public const int station4 = 2131492915;
 			
 			// aapt resource value: 0x7f0c0034
-			public const int station3 = 2131492916;
+			public const int station5 = 2131492916;
 			
 			// aapt resource value: 0x7f0c0035
-			public const int station4 = 2131492917;
-			
-			// aapt resource value: 0x7f0c0036
-			public const int station5 = 2131492918;
-			
-			// aapt resource value: 0x7f0c0037
-			public const int station6 = 2131492919;
+			public const int station6 = 2131492917;
 			
 			// aapt resource value: 0x7f0c001c
 			public const int status_bar_notification_info_overflow = 2131492892;

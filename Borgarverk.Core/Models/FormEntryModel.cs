@@ -3,7 +3,7 @@ using SQLite;
 
 namespace Borgarverk.Core
 {
-	public class Form
+	public class FormEntryModel
 	{
 		[PrimaryKey, AutoIncrement]
 		public int Id { get; set; }
@@ -17,7 +17,7 @@ namespace Borgarverk.Core
 		public string QtyRate { get; set; }
 		public DateTime TimeSent { get; set; }
 
-		public Form()
+		public FormEntryModel()
 		{
 			// á ég að initializa breyturnar?
 		}
