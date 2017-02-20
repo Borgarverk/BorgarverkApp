@@ -34,10 +34,7 @@
     <Compile Include="Services\FormEntryService.cs" />
     <Compile Include="CustomAppStart.cs" />
     <Compile Include="Services\IFormEntryService.cs" />
-    <Compile Include="Models\Form.cs" />
-    <Compile Include="Services\FormEntry.cs" />
-    <Compile Include="Services\IDataService.cs" />
-    <Compile Include="Services\DataService.cs" />
+    <Compile Include="Models\FormEntryModel.cs" />
     <Compile Include="Models\CarModel.cs" />
     <Compile Include="Models\StationModel.cs" />
   </ItemGroup>
@@ -62,9 +59,6 @@
     </Reference>
     <Reference Include="SQLite-net">
       <HintPath>..\packages\sqlite-net-pcl.1.1.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Plugins.Sqlite">
-      <HintPath>..\packages\MvvmCross.Plugin.SQLitePCL.4.4.0\lib\portable-win+net45+wp8+win8+wpa81+win81+dotnet\MvvmCross.Plugins.Sqlite.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

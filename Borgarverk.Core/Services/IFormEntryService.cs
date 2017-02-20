@@ -5,6 +5,6 @@ namespace Borgarverk.Core
 {
 	public interface IFormEntryService
 	{
-		Form ConstructForm();
+		FormEntryModel ConstructForm();
 	}
 }
