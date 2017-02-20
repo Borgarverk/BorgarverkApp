@@ -1153,43 +1153,49 @@ namespace Borgarverk.Droid
 		{
 			
 			// aapt resource value: 0x7f0a0046
-			public const int abc_background_cache_hint_selector_material_dark = 2131361862;
+			public const int Mainblue = 2131361862;
 			
 			// aapt resource value: 0x7f0a0047
-			public const int abc_background_cache_hint_selector_material_light = 2131361863;
+			public const int TurkishBlue = 2131361863;
 			
 			// aapt resource value: 0x7f0a0048
-			public const int abc_btn_colored_borderless_text_material = 2131361864;
+			public const int abc_background_cache_hint_selector_material_dark = 2131361864;
 			
 			// aapt resource value: 0x7f0a0049
-			public const int abc_btn_colored_text_material = 2131361865;
+			public const int abc_background_cache_hint_selector_material_light = 2131361865;
 			
 			// aapt resource value: 0x7f0a004a
-			public const int abc_color_highlight_material = 2131361866;
+			public const int abc_btn_colored_borderless_text_material = 2131361866;
 			
 			// aapt resource value: 0x7f0a004b
-			public const int abc_hint_foreground_material_dark = 2131361867;
+			public const int abc_btn_colored_text_material = 2131361867;
 			
 			// aapt resource value: 0x7f0a004c
-			public const int abc_hint_foreground_material_light = 2131361868;
+			public const int abc_color_highlight_material = 2131361868;
+			
+			// aapt resource value: 0x7f0a004d
+			public const int abc_hint_foreground_material_dark = 2131361869;
+			
+			// aapt resource value: 0x7f0a004e
+			public const int abc_hint_foreground_material_light = 2131361870;
 			
 			// aapt resource value: 0x7f0a000c
 			public const int abc_input_method_navigation_guard = 2131361804;
 			
-			// aapt resource value: 0x7f0a004d
-			public const int abc_primary_text_disable_only_material_dark = 2131361869;
-			
-			// aapt resource value: 0x7f0a004e
-			public const int abc_primary_text_disable_only_material_light = 2131361870;
-			
 			// aapt resource value: 0x7f0a004f
-			public const int abc_primary_text_material_dark = 2131361871;
+			public const int abc_primary_text_disable_only_material_dark = 2131361871;
 			
 			// aapt resource value: 0x7f0a0050
-			public const int abc_primary_text_material_light = 2131361872;
+			public const int abc_primary_text_disable_only_material_light = 2131361872;
 			
 			// aapt resource value: 0x7f0a0051
-			public const int abc_search_url_text = 2131361873;
+			public const int abc_primary_text_material_dark = 2131361873;
+			
+			// aapt resource value: 0x7f0a0052
+			public const int abc_primary_text_material_light = 2131361874;
+			
+			// aapt resource value: 0x7f0a0053
+			public const int abc_search_url_text = 2131361875;
 			
 			// aapt resource value: 0x7f0a000d
 			public const int abc_search_url_text_normal = 2131361805;
@@ -1200,32 +1206,32 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0a000f
 			public const int abc_search_url_text_selected = 2131361807;
 			
-			// aapt resource value: 0x7f0a0052
-			public const int abc_secondary_text_material_dark = 2131361874;
-			
-			// aapt resource value: 0x7f0a0053
-			public const int abc_secondary_text_material_light = 2131361875;
-			
 			// aapt resource value: 0x7f0a0054
-			public const int abc_tint_btn_checkable = 2131361876;
+			public const int abc_secondary_text_material_dark = 2131361876;
 			
 			// aapt resource value: 0x7f0a0055
-			public const int abc_tint_default = 2131361877;
+			public const int abc_secondary_text_material_light = 2131361877;
 			
 			// aapt resource value: 0x7f0a0056
-			public const int abc_tint_edittext = 2131361878;
+			public const int abc_tint_btn_checkable = 2131361878;
 			
 			// aapt resource value: 0x7f0a0057
-			public const int abc_tint_seek_thumb = 2131361879;
+			public const int abc_tint_default = 2131361879;
 			
 			// aapt resource value: 0x7f0a0058
-			public const int abc_tint_spinner = 2131361880;
+			public const int abc_tint_edittext = 2131361880;
 			
 			// aapt resource value: 0x7f0a0059
-			public const int abc_tint_switch_thumb = 2131361881;
+			public const int abc_tint_seek_thumb = 2131361881;
 			
 			// aapt resource value: 0x7f0a005a
-			public const int abc_tint_switch_track = 2131361882;
+			public const int abc_tint_spinner = 2131361882;
+			
+			// aapt resource value: 0x7f0a005b
+			public const int abc_tint_switch_thumb = 2131361883;
+			
+			// aapt resource value: 0x7f0a005c
+			public const int abc_tint_switch_track = 2131361884;
 			
 			// aapt resource value: 0x7f0a0010
 			public const int accent_material_dark = 2131361808;
@@ -1272,8 +1278,8 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0a0000
 			public const int design_bottom_navigation_shadow_color = 2131361792;
 			
-			// aapt resource value: 0x7f0a005b
-			public const int design_error = 2131361883;
+			// aapt resource value: 0x7f0a005d
+			public const int design_error = 2131361885;
 			
 			// aapt resource value: 0x7f0a0001
 			public const int design_fab_shadow_end_color = 2131361793;
@@ -1305,8 +1311,8 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0a000a
 			public const int design_textinput_error_color_light = 2131361802;
 			
-			// aapt resource value: 0x7f0a005c
-			public const int design_tint_password_toggle = 2131361884;
+			// aapt resource value: 0x7f0a005e
+			public const int design_tint_password_toggle = 2131361886;
 			
 			// aapt resource value: 0x7f0a001e
 			public const int dim_foreground_disabled_material_dark = 2131361822;
@@ -1425,11 +1431,11 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0a0043
 			public const int switch_thumb_disabled_material_light = 2131361859;
 			
-			// aapt resource value: 0x7f0a005d
-			public const int switch_thumb_material_dark = 2131361885;
+			// aapt resource value: 0x7f0a005f
+			public const int switch_thumb_material_dark = 2131361887;
 			
-			// aapt resource value: 0x7f0a005e
-			public const int switch_thumb_material_light = 2131361886;
+			// aapt resource value: 0x7f0a0060
+			public const int switch_thumb_material_light = 2131361888;
 			
 			// aapt resource value: 0x7f0a0044
 			public const int switch_thumb_normal_material_dark = 2131361860;
@@ -2253,8 +2259,8 @@ namespace Borgarverk.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b00ac
-			public const int MainMenuButtonLayout = 2131427500;
+			// aapt resource value: 0x7f0b00ae
+			public const int MainMenuButtonLayout = 2131427502;
 			
 			// aapt resource value: 0x7f0b000f
 			public const int MvvmCrossTagId = 2131427343;
@@ -2262,8 +2268,8 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b0010
 			public const int MvxBindingTagUnique = 2131427344;
 			
-			// aapt resource value: 0x7f0b00b3
-			public const int action0 = 2131427507;
+			// aapt resource value: 0x7f0b00b5
+			public const int action0 = 2131427509;
 			
 			// aapt resource value: 0x7f0b0066
 			public const int action_bar = 2131427430;
@@ -2286,17 +2292,17 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b0043
 			public const int action_bar_title = 2131427395;
 			
-			// aapt resource value: 0x7f0b00b0
-			public const int action_container = 2131427504;
+			// aapt resource value: 0x7f0b00b2
+			public const int action_container = 2131427506;
 			
 			// aapt resource value: 0x7f0b0067
 			public const int action_context_bar = 2131427431;
 			
-			// aapt resource value: 0x7f0b00b7
-			public const int action_divider = 2131427511;
+			// aapt resource value: 0x7f0b00b9
+			public const int action_divider = 2131427513;
 			
-			// aapt resource value: 0x7f0b00b1
-			public const int action_image = 2131427505;
+			// aapt resource value: 0x7f0b00b3
+			public const int action_image = 2131427507;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int action_menu_divider = 2131427333;
@@ -2313,11 +2319,11 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b0045
 			public const int action_mode_close_button = 2131427397;
 			
-			// aapt resource value: 0x7f0b00b2
-			public const int action_text = 2131427506;
+			// aapt resource value: 0x7f0b00b4
+			public const int action_text = 2131427508;
 			
-			// aapt resource value: 0x7f0b00c0
-			public const int actions = 2131427520;
+			// aapt resource value: 0x7f0b00c2
+			public const int actions = 2131427522;
 			
 			// aapt resource value: 0x7f0b0046
 			public const int activity_chooser_view_content = 2131427398;
@@ -2331,8 +2337,8 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b0028
 			public const int all = 2131427368;
 			
-			// aapt resource value: 0x7f0b00ae
-			public const int allFormEntryButton = 2131427502;
+			// aapt resource value: 0x7f0b00b0
+			public const int allFormEntryButton = 2131427504;
 			
 			// aapt resource value: 0x7f0b003e
 			public const int always = 2131427390;
@@ -2349,32 +2355,35 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b004d
 			public const int buttonPanel = 2131427405;
 			
-			// aapt resource value: 0x7f0b00b4
-			public const int cancel_action = 2131427508;
+			// aapt resource value: 0x7f0b00b6
+			public const int cancel_action = 2131427510;
 			
-			// aapt resource value: 0x7f0b0089
-			public const int car1Button = 2131427465;
+			// aapt resource value: 0x7f0b00a1
+			public const int car1Button = 2131427489;
 			
-			// aapt resource value: 0x7f0b008a
-			public const int car2Button = 2131427466;
+			// aapt resource value: 0x7f0b00a2
+			public const int car2Button = 2131427490;
 			
-			// aapt resource value: 0x7f0b008b
-			public const int car3Button = 2131427467;
+			// aapt resource value: 0x7f0b00a3
+			public const int car3Button = 2131427491;
 			
-			// aapt resource value: 0x7f0b008c
-			public const int car4Button = 2131427468;
+			// aapt resource value: 0x7f0b00a4
+			public const int car4Button = 2131427492;
 			
-			// aapt resource value: 0x7f0b008d
-			public const int car5Button = 2131427469;
+			// aapt resource value: 0x7f0b00a5
+			public const int car5Button = 2131427493;
 			
-			// aapt resource value: 0x7f0b0088
-			public const int carButtonLayout = 2131427464;
+			// aapt resource value: 0x7f0b00a0
+			public const int carButtonLayout = 2131427488;
 			
 			// aapt resource value: 0x7f0b0087
 			public const int carNoLabel = 2131427463;
 			
 			// aapt resource value: 0x7f0b0081
 			public const int carNoLayout = 2131427457;
+			
+			// aapt resource value: 0x7f0b0088
+			public const int carSpinner = 2131427464;
 			
 			// aapt resource value: 0x7f0b0018
 			public const int center = 2131427352;
@@ -2388,8 +2397,8 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b005d
 			public const int checkbox = 2131427421;
 			
-			// aapt resource value: 0x7f0b00bc
-			public const int chronometer = 2131427516;
+			// aapt resource value: 0x7f0b00be
+			public const int chronometer = 2131427518;
 			
 			// aapt resource value: 0x7f0b0024
 			public const int clip_horizontal = 2131427364;
@@ -2400,8 +2409,8 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b003f
 			public const int collapseActionView = 2131427391;
 			
-			// aapt resource value: 0x7f0b00ab
-			public const int confirmForm = 2131427499;
+			// aapt resource value: 0x7f0b009f
+			public const int confirmForm = 2131427487;
 			
 			// aapt resource value: 0x7f0b0050
 			public const int contentPanel = 2131427408;
@@ -2439,8 +2448,8 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b0082
 			public const int divider1 = 2131427458;
 			
-			// aapt resource value: 0x7f0b00aa
-			public const int divider2 = 2131427498;
+			// aapt resource value: 0x7f0b009e
+			public const int divider2 = 2131427486;
 			
 			// aapt resource value: 0x7f0b0068
 			public const int edit_query = 2131427432;
@@ -2448,8 +2457,8 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b001b
 			public const int end = 2131427355;
 			
-			// aapt resource value: 0x7f0b00c6
-			public const int end_padder = 2131427526;
+			// aapt resource value: 0x7f0b00c8
+			public const int end_padder = 2131427528;
 			
 			// aapt resource value: 0x7f0b0011
 			public const int enterAlways = 2131427345;
@@ -2487,8 +2496,8 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b004b
 			public const int icon = 2131427403;
 			
-			// aapt resource value: 0x7f0b00c1
-			public const int icon_group = 2131427521;
+			// aapt resource value: 0x7f0b00c3
+			public const int icon_group = 2131427523;
 			
 			// aapt resource value: 0x7f0b0084
 			public const int idNumber = 2131427460;
@@ -2505,20 +2514,20 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b0086
 			public const int imageView1 = 2131427462;
 			
+			// aapt resource value: 0x7f0b008b
+			public const int imageView2 = 2131427467;
+			
+			// aapt resource value: 0x7f0b00bf
+			public const int info = 2131427519;
+			
 			// aapt resource value: 0x7f0b0090
-			public const int imageView2 = 2131427472;
+			public const int infoImage = 2131427472;
 			
-			// aapt resource value: 0x7f0b00bd
-			public const int info = 2131427517;
+			// aapt resource value: 0x7f0b0091
+			public const int infoLabel = 2131427473;
 			
-			// aapt resource value: 0x7f0b009c
-			public const int infoImage = 2131427484;
-			
-			// aapt resource value: 0x7f0b009d
-			public const int infoLabel = 2131427485;
-			
-			// aapt resource value: 0x7f0b009a
-			public const int informationLayout = 2131427482;
+			// aapt resource value: 0x7f0b008e
+			public const int informationLayout = 2131427470;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int item_touch_helper_previous_elevation = 2131427340;
@@ -2529,20 +2538,20 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b001d
 			public const int left = 2131427357;
 			
-			// aapt resource value: 0x7f0b00c2
-			public const int line1 = 2131427522;
-			
 			// aapt resource value: 0x7f0b00c4
-			public const int line3 = 2131427524;
+			public const int line1 = 2131427524;
+			
+			// aapt resource value: 0x7f0b00c6
+			public const int line3 = 2131427526;
 			
 			// aapt resource value: 0x7f0b0085
 			public const int linearLayout2 = 2131427461;
 			
-			// aapt resource value: 0x7f0b008f
-			public const int linearLayout3 = 2131427471;
+			// aapt resource value: 0x7f0b008a
+			public const int linearLayout3 = 2131427466;
 			
-			// aapt resource value: 0x7f0b009b
-			public const int linearLayout4 = 2131427483;
+			// aapt resource value: 0x7f0b008f
+			public const int linearLayout4 = 2131427471;
 			
 			// aapt resource value: 0x7f0b0032
 			public const int listMode = 2131427378;
@@ -2550,11 +2559,11 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b004a
 			public const int list_item = 2131427402;
 			
-			// aapt resource value: 0x7f0b00c8
-			public const int masked = 2131427528;
+			// aapt resource value: 0x7f0b00ca
+			public const int masked = 2131427530;
 			
-			// aapt resource value: 0x7f0b00b6
-			public const int media_actions = 2131427510;
+			// aapt resource value: 0x7f0b00b8
+			public const int media_actions = 2131427512;
 			
 			// aapt resource value: 0x7f0b003d
 			public const int middle = 2131427389;
@@ -2571,8 +2580,8 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b0041
 			public const int never = 2131427393;
 			
-			// aapt resource value: 0x7f0b00ad
-			public const int newFormButton = 2131427501;
+			// aapt resource value: 0x7f0b00af
+			public const int newFormButton = 2131427503;
 			
 			// aapt resource value: 0x7f0b0021
 			public const int none = 2131427361;
@@ -2580,14 +2589,14 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b002a
 			public const int normal = 2131427370;
 			
-			// aapt resource value: 0x7f0b00bf
-			public const int notification_background = 2131427519;
+			// aapt resource value: 0x7f0b00c1
+			public const int notification_background = 2131427521;
 			
-			// aapt resource value: 0x7f0b00b9
-			public const int notification_main_column = 2131427513;
+			// aapt resource value: 0x7f0b00bb
+			public const int notification_main_column = 2131427515;
 			
-			// aapt resource value: 0x7f0b00b8
-			public const int notification_main_column_container = 2131427512;
+			// aapt resource value: 0x7f0b00ba
+			public const int notification_main_column_container = 2131427514;
 			
 			// aapt resource value: 0x7f0b0022
 			public const int parallax = 2131427362;
@@ -2604,14 +2613,14 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b0009
 			public const int progress_horizontal = 2131427337;
 			
-			// aapt resource value: 0x7f0b00a7
-			public const int quantity = 2131427495;
+			// aapt resource value: 0x7f0b009b
+			public const int quantity = 2131427483;
 			
-			// aapt resource value: 0x7f0b00a5
-			public const int quantityLayout = 2131427493;
+			// aapt resource value: 0x7f0b0099
+			public const int quantityLayout = 2131427481;
 			
-			// aapt resource value: 0x7f0b00a9
-			public const int quantityRate = 2131427497;
+			// aapt resource value: 0x7f0b009d
+			public const int quantityRate = 2131427485;
 			
 			// aapt resource value: 0x7f0b005f
 			public const int radio = 2131427423;
@@ -2619,23 +2628,23 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b001e
 			public const int right = 2131427358;
 			
-			// aapt resource value: 0x7f0b00be
-			public const int right_icon = 2131427518;
+			// aapt resource value: 0x7f0b00c0
+			public const int right_icon = 2131427520;
 			
-			// aapt resource value: 0x7f0b00ba
-			public const int right_side = 2131427514;
+			// aapt resource value: 0x7f0b00bc
+			public const int right_side = 2131427516;
 			
-			// aapt resource value: 0x7f0b00a4
-			public const int roadArea = 2131427492;
+			// aapt resource value: 0x7f0b0098
+			public const int roadArea = 2131427480;
 			
-			// aapt resource value: 0x7f0b009e
-			public const int roadInfoLayout = 2131427486;
+			// aapt resource value: 0x7f0b0092
+			public const int roadInfoLayout = 2131427474;
 			
-			// aapt resource value: 0x7f0b00a2
-			public const int roadLength = 2131427490;
+			// aapt resource value: 0x7f0b0096
+			public const int roadLength = 2131427478;
 			
-			// aapt resource value: 0x7f0b00a0
-			public const int roadWidth = 2131427488;
+			// aapt resource value: 0x7f0b0094
+			public const int roadWidth = 2131427476;
 			
 			// aapt resource value: 0x7f0b002e
 			public const int screen = 2131427374;
@@ -2688,8 +2697,8 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b0074
 			public const int select_dialog_listview = 2131427444;
 			
-			// aapt resource value: 0x7f0b00af
-			public const int settingsButton = 2131427503;
+			// aapt resource value: 0x7f0b00b1
+			public const int settingsButton = 2131427505;
 			
 			// aapt resource value: 0x7f0b005e
 			public const int shortcut = 2131427422;
@@ -2733,38 +2742,41 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b001f
 			public const int start = 2131427359;
 			
-			// aapt resource value: 0x7f0b0093
-			public const int station1Button = 2131427475;
+			// aapt resource value: 0x7f0b00a7
+			public const int station1Button = 2131427495;
 			
-			// aapt resource value: 0x7f0b0094
-			public const int station2Button = 2131427476;
+			// aapt resource value: 0x7f0b00a8
+			public const int station2Button = 2131427496;
 			
-			// aapt resource value: 0x7f0b0095
-			public const int station3Button = 2131427477;
+			// aapt resource value: 0x7f0b00a9
+			public const int station3Button = 2131427497;
 			
-			// aapt resource value: 0x7f0b0097
-			public const int station4Button = 2131427479;
+			// aapt resource value: 0x7f0b00ab
+			public const int station4Button = 2131427499;
 			
-			// aapt resource value: 0x7f0b0098
-			public const int station5Button = 2131427480;
+			// aapt resource value: 0x7f0b00ac
+			public const int station5Button = 2131427500;
 			
-			// aapt resource value: 0x7f0b0099
-			public const int station6Button = 2131427481;
+			// aapt resource value: 0x7f0b00ad
+			public const int station6Button = 2131427501;
 			
-			// aapt resource value: 0x7f0b0092
-			public const int stationButtonLayout1 = 2131427474;
+			// aapt resource value: 0x7f0b00a6
+			public const int stationButtonLayout1 = 2131427494;
 			
-			// aapt resource value: 0x7f0b0096
-			public const int stationButtonLayout2 = 2131427478;
+			// aapt resource value: 0x7f0b00aa
+			public const int stationButtonLayout2 = 2131427498;
 			
-			// aapt resource value: 0x7f0b0091
-			public const int stationLabel = 2131427473;
+			// aapt resource value: 0x7f0b008c
+			public const int stationLabel = 2131427468;
 			
-			// aapt resource value: 0x7f0b008e
-			public const int stationLayout = 2131427470;
+			// aapt resource value: 0x7f0b0089
+			public const int stationLayout = 2131427465;
 			
-			// aapt resource value: 0x7f0b00b5
-			public const int status_bar_latest_event_content = 2131427509;
+			// aapt resource value: 0x7f0b008d
+			public const int stationSpinner = 2131427469;
+			
+			// aapt resource value: 0x7f0b00b7
+			public const int status_bar_latest_event_content = 2131427511;
 			
 			// aapt resource value: 0x7f0b0060
 			public const int submenuarrow = 2131427424;
@@ -2775,26 +2787,26 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b0033
 			public const int tabMode = 2131427379;
 			
+			// aapt resource value: 0x7f0b00c7
+			public const int text = 2131427527;
+			
 			// aapt resource value: 0x7f0b00c5
-			public const int text = 2131427525;
+			public const int text2 = 2131427525;
 			
-			// aapt resource value: 0x7f0b00c3
-			public const int text2 = 2131427523;
+			// aapt resource value: 0x7f0b009a
+			public const int textInputLayout3 = 2131427482;
 			
-			// aapt resource value: 0x7f0b00a6
-			public const int textInputLayout3 = 2131427494;
+			// aapt resource value: 0x7f0b009c
+			public const int textInputLayout4 = 2131427484;
 			
-			// aapt resource value: 0x7f0b00a8
-			public const int textInputLayout4 = 2131427496;
+			// aapt resource value: 0x7f0b0093
+			public const int textInputLayout5 = 2131427475;
 			
-			// aapt resource value: 0x7f0b009f
-			public const int textInputLayout5 = 2131427487;
+			// aapt resource value: 0x7f0b0095
+			public const int textInputLayout6 = 2131427477;
 			
-			// aapt resource value: 0x7f0b00a1
-			public const int textInputLayout6 = 2131427489;
-			
-			// aapt resource value: 0x7f0b00a3
-			public const int textInputLayout7 = 2131427491;
+			// aapt resource value: 0x7f0b0097
+			public const int textInputLayout7 = 2131427479;
 			
 			// aapt resource value: 0x7f0b0054
 			public const int textSpacerNoButtons = 2131427412;
@@ -2811,8 +2823,8 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b0001
 			public const int textinput_error = 2131427329;
 			
-			// aapt resource value: 0x7f0b00bb
-			public const int time = 2131427515;
+			// aapt resource value: 0x7f0b00bd
+			public const int time = 2131427517;
 			
 			// aapt resource value: 0x7f0b004c
 			public const int title = 2131427404;
@@ -2847,8 +2859,8 @@ namespace Borgarverk.Droid
 			// aapt resource value: 0x7f0b0002
 			public const int view_offset_helper = 2131427330;
 			
-			// aapt resource value: 0x7f0b00c7
-			public const int visible = 2131427527;
+			// aapt resource value: 0x7f0b00c9
+			public const int visible = 2131427529;
 			
 			// aapt resource value: 0x7f0b0042
 			public const int withText = 2131427394;

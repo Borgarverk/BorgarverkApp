@@ -143,6 +143,7 @@
     <AndroidResource Include="Resources\drawable\toggleButtonSelector.xml" />
     <AndroidResource Include="Resources\drawable\ToggleButtonOn.xml" />
     <AndroidResource Include="Resources\drawable\toggleButtonOff.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

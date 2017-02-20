@@ -29,30 +29,28 @@ namespace Borgarverk.Core.ViewModels
 		private string car = "";
 		public string Car
 		{
-			get
-			{
-				return car;
+			get 
+			{ 
+				return car; 
 			}
-			set
-			{
-				SetProperty(ref car, value);
-				RaisePropertyChanged(() => Car);
-
+			set 
+			{ 
+				car = value;
+				System.Diagnostics.Debug.WriteLine("Item Selected " + Car);
+				RaisePropertyChanged(() => Car); 
 			}
 		}
 
 		private string station = "";
 		public string Station
 		{
-			get
-			{
-				return station;
+			get 
+			{ return station; 
 			}
-			set
-			{
-				SetProperty(ref station, value);
-				RaisePropertyChanged(() => Station);
-
+			set 
+			{ 
+				station = value; 
+				RaisePropertyChanged(() => Station); 
 			}
 		}
 
@@ -163,14 +161,14 @@ namespace Borgarverk.Core.ViewModels
 		{
 			System.Diagnostics.Debug.WriteLine("CLICKED CAR BUTTON!");
 			System.Diagnostics.Debug.WriteLine(num);
-			model.car = num;
+			Car = num;
 		}
 
 		void AddStation(string num)
 		{
 			System.Diagnostics.Debug.WriteLine("CLICKED STATION BUTTON!");
 			System.Diagnostics.Debug.WriteLine(num);
-			model.station = num;
+			Station = num;
 		}
 	}
 }

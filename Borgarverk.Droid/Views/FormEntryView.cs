@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Android.App;
 using Android.OS;
+using Android.Support.V4.Content;
 using Android.Widget;
 using MvvmCross.Droid.Views;
 
@@ -14,71 +15,30 @@ namespace Borgarverk.Droid
 		{
 			base.OnCreate(bundle);
 			SetContentView(Resource.Layout.FormEntryView);
+			/* Gæti þurft að nota seinna
+			string[] arr = Resources.GetStringArray(Resource.Array.cars);*/
 
-			ToggleButton carButton1 = FindViewById<ToggleButton>(Resource.Id.car1Button);
-			ToggleButton carButton2 = FindViewById<ToggleButton>(Resource.Id.car2Button);
-			ToggleButton carButton3 = FindViewById<ToggleButton>(Resource.Id.car3Button);
-			ToggleButton carButton4 = FindViewById<ToggleButton>(Resource.Id.car4Button);
-			ToggleButton carButton5 = FindViewById<ToggleButton>(Resource.Id.car5Button);
+			Spinner carSpinner = FindViewById<Spinner>(Resource.Id.carSpinner);
+			Spinner stationSpinner = FindViewById<Spinner>(Resource.Id.stationSpinner);
 
-			ToggleButton stationButton1 = FindViewById<ToggleButton>(Resource.Id.station1Button);
-			ToggleButton stationButton2 = FindViewById<ToggleButton>(Resource.Id.station2Button);
-			ToggleButton stationButton3 = FindViewById<ToggleButton>(Resource.Id.station3Button);
-			ToggleButton stationButton4 = FindViewById<ToggleButton>(Resource.Id.station4Button);
-			ToggleButton stationButton5 = FindViewById<ToggleButton>(Resource.Id.station5Button);
-			ToggleButton stationButton6 = FindViewById<ToggleButton>(Resource.Id.station6Button);
+			ArrayAdapter carAdapter = ArrayAdapter.CreateFromResource(
+				this,
+				Resource.Array.cars,
+				Android.Resource.Layout.SimpleSpinnerItem);
 
-			carButton1.Click += UnToggleCarButtons;
-			carButton2.Click += UnToggleCarButtons;
-			carButton3.Click += UnToggleCarButtons;
-			carButton4.Click += UnToggleCarButtons;
-			carButton5.Click += UnToggleCarButtons;
+			carAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
 
-			stationButton1.Click += UnToggleStationButtons;
-			stationButton2.Click += UnToggleStationButtons;
-			stationButton3.Click += UnToggleStationButtons;
-			stationButton4.Click += UnToggleStationButtons;
-			stationButton5.Click += UnToggleStationButtons;
-			stationButton6.Click += UnToggleStationButtons;
+			carSpinner.Adapter = carAdapter;
+
+			ArrayAdapter stationAdapter = ArrayAdapter.CreateFromResource(
+				this,
+				Resource.Array.stations,
+				Android.Resource.Layout.SimpleSpinnerItem);
+
+			stationAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+
+			stationSpinner.Adapter = stationAdapter;
 		}
 
-		public void UnToggleCarButtons(object sender, EventArgs e)
-		{
-			ToggleButton button = sender as ToggleButton;
-			List<ToggleButton> buttonList = new List<ToggleButton>();
-			buttonList.Add(FindViewById<ToggleButton>(Resource.Id.car1Button));
-			buttonList.Add(FindViewById<ToggleButton>(Resource.Id.car2Button));
-			buttonList.Add(FindViewById<ToggleButton>(Resource.Id.car3Button));
-			buttonList.Add(FindViewById<ToggleButton>(Resource.Id.car4Button));
-			buttonList.Add(FindViewById<ToggleButton>(Resource.Id.car5Button));
-
-			foreach (ToggleButton b in buttonList)
-			{
-				if (button != b)
-				{
-					b.Checked = false;
-				}
-			}
-		}
-
-		public void UnToggleStationButtons(object sender, EventArgs e)
-		{
-			ToggleButton button = sender as ToggleButton;
-			List<ToggleButton> buttonList = new List<ToggleButton>();
-			buttonList.Add(FindViewById<ToggleButton>(Resource.Id.station1Button));
-			buttonList.Add(FindViewById<ToggleButton>(Resource.Id.station2Button));
-			buttonList.Add(FindViewById<ToggleButton>(Resource.Id.station3Button));
-			buttonList.Add(FindViewById<ToggleButton>(Resource.Id.station4Button));
-			buttonList.Add(FindViewById<ToggleButton>(Resource.Id.station5Button));
-			buttonList.Add(FindViewById<ToggleButton>(Resource.Id.station6Button));
-
-			foreach (ToggleButton b in buttonList)
-			{
-				if (button != b)
-				{
-					b.Checked = false;
-				}
-			}
-		}
 	}
 }
