@@ -5,10 +5,10 @@ using SQLite;
 
 namespace Borgarverk.Core.Services
 {
-	/*public class DataService : IDataService
+	public class DataService : IDataService
 	{
 		
-		private readonly ISQLiteConnection _connection;
+		/*private readonly ISQLiteConnection _connection;
 
 		public DataService(ISQLiteConnectionFactory factory)
 		{
