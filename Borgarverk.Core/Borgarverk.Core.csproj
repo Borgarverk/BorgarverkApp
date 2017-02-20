@@ -38,6 +38,8 @@
     <Compile Include="Services\FormEntry.cs" />
     <Compile Include="Services\IDataService.cs" />
     <Compile Include="Services\DataService.cs" />
+    <Compile Include="Models\CarModel.cs" />
+    <Compile Include="Models\StationModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Core">

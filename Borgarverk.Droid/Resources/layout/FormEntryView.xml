@@ -61,12 +61,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical" />
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/carSpinner"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp" />
+            <MvvmCross.Binding.Droid.Views.MvxSpinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                local:MvxItemTemplate="@layout/item_spinner"
+                local:MvxDropDownItemTemplate="@layout/item_spinnerdropdown"
+                local:MvxBind="ItemsSource CarItems; SelectedItem Car" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -100,12 +102,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical" />
-            <Spinner
+            <MvvmCross.Binding.Droid.Views.MvxSpinner
                 android:id="@+id/stationSpinner"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:layout_marginLeft="10dp" />
+                android:layout_marginLeft="10dp"
+                local:MvxItemTemplate="@layout/station_spinneritem"
+                local:MvxDropDownItemTemplate="@layout/station_spinneritemdropdown"
+                local:MvxBind="ItemsSource StationItems; SelectedItem Station" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -249,5 +254,5 @@
         android:textSize="20dp"
         android:drawablePadding="10dp"
         android:paddingStart="70dp"
-        local:MvxBind="Click ConfirmForm" />
+        local:MvxBind="Click ConfirmFormCommand" />
 </LinearLayout>

@@ -1,20 +1,22 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MvvmCross.Plugins.Sqlite;
+using SQLite;
 
 namespace Borgarverk.Core.Services
 {
-	public class DataService : IDataService
+	/*public class DataService : IDataService
 	{
+		
 		private readonly ISQLiteConnection _connection;
 
 		public DataService(ISQLiteConnectionFactory factory)
 		{
 			_connection = factory.Create("one.sql");
-			_connection.CreateTable<Kitten>();
+			_connection.CreateTable<FormEntry>();
 		}
 
-		public List<FormEntry> KittensMatching(string nameFilter)
+		public List<FormEntry> FormsMatching(string nameFilter)
 		{
 			return _connection.Table<FormEntry>()
 							  .OrderBy(x => x.Price)
@@ -44,5 +46,5 @@ namespace Borgarverk.Core.Services
 				return _connection.Table<FormEntry>().Count();
 			}
 		}
-	}
+	}*/
 }

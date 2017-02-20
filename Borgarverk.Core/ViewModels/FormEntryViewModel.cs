@@ -1,4 +1,6 @@
-﻿using Borgarverk.Core.Services;
+﻿using System;
+using System.Collections.Generic;
+using Borgarverk.Core.Services;
 using MvvmCross.Core.ViewModels;
 
 namespace Borgarverk.Core.ViewModels
@@ -29,8 +31,8 @@ namespace Borgarverk.Core.ViewModels
 			}
 		}
 
-		private string car = "";
-		public string Car
+		private CarModel car = new CarModel("");
+		public CarModel Car
 		{
 			get 
 			{ 
@@ -39,20 +41,21 @@ namespace Borgarverk.Core.ViewModels
 			set 
 			{ 
 				car = value;
-				System.Diagnostics.Debug.WriteLine("Item Selected " + Car);
+				System.Diagnostics.Debug.WriteLine("Item Selected " + Car.CarNo);
 				RaisePropertyChanged(() => Car); 
 			}
 		}
 
-		private string station = "";
-		public string Station
+		private StationModel station = new StationModel("");
+		public StationModel Station
 		{
 			get 
 			{ return station; 
 			}
 			set 
 			{ 
-				station = value; 
+				station = value;
+				System.Diagnostics.Debug.WriteLine("Item Selected " + station.Name);
 				RaisePropertyChanged(() => Station); 
 			}
 		}
@@ -132,19 +135,122 @@ namespace Borgarverk.Core.ViewModels
 			}
 		}
 
-		public IMvxCommand ConfirmForm
+		private DateTime timeSent;
+		public DateTime TimeSent
 		{
-			get { return new MvxCommand(ConstructForm); }
+			get
+			{
+				return timeSent;
+			}
+			set
+			{
+				SetProperty(ref timeSent, value);
+				RaisePropertyChanged(() => TimeSent);
+			}
 		}
 
-		public IMvxCommand GetCar
+		private List<CarModel> carItems = new List<CarModel>()
+			{
+				new CarModel("ML-455"),
+				new CarModel("MU-510"),
+				new CarModel("BZ-963"),
+				new CarModel("US-553"),
+				new CarModel("AZ-R92")
+			};
+
+		public List<CarModel> CarItems
 		{
-			get { return new MvxCommand<string>(AddCar); }
+			get 
+			{
+				return carItems;
+			}
+			set 
+			{
+				carItems = value; 
+				RaisePropertyChanged(() => CarItems); 
+			}
 		}
 
-		public IMvxCommand GetStation
+		private List<StationModel> stationItems = new List<StationModel>()
+			{
+				new StationModel("Akureyri"),
+				new StationModel("Ísafjörður"),
+				new StationModel("Reykjavík"),
+				new StationModel("Hlaðbær Colas"),
+				new StationModel("Reyðarfjörður")
+			};
+
+		public List<StationModel> StationItems
 		{
-			get { return new MvxCommand<string>(AddStation); }
+			get
+			{
+				return stationItems;
+			}
+			set
+			{
+				stationItems = value;
+				RaisePropertyChanged(() => StationItems);
+			}
+		}
+
+		/*public class Thing
+		{
+			public Thing(string caption)
+			{
+				Caption = caption;
+			}
+
+			public string Caption { get; private set; }
+
+			public override string ToString()
+			{
+				return Caption;
+			}
+
+			public override bool Equals(object obj)
+			{
+				var rhs = obj as Thing;
+				if (rhs == null)
+					return false;
+				return rhs.Caption == Caption;
+			}
+
+			public override int GetHashCode()
+			{
+				if (Caption == null)
+					return 0;
+				return Caption.GetHashCode();
+			}
+		}
+		private List<Thing> _items = new List<Thing>()
+			{
+				new Thing("One"),
+				new Thing("Two"),
+				new Thing("Three"),
+				new Thing("Four"),
+			};
+		public List<Thing> Items
+		{
+			get { return _items; }
+			set { _items = value; RaisePropertyChanged(() => Items); }
+		}
+
+		private Thing _selectedItem = new Thing("Three");
+		public Thing SelectedItem
+		{
+			get { return _selectedItem; }
+			set { _selectedItem = value; RaisePropertyChanged(() => SelectedItem); }
+		}*/
+
+
+		private MvxCommand confirmFormCommand;
+		public IMvxCommand ConfirmFormCommand
+		{
+			get 
+			{
+				confirmFormCommand = confirmFormCommand ?? new MvxCommand(ConstructForm);
+				return confirmFormCommand; 
+			}
 		}
 
 		void ConstructForm()
@@ -160,18 +266,5 @@ namespace Borgarverk.Core.ViewModels
 			model.qtyRate = QtyRate;
 		}
 
-		void AddCar(string num)
-		{
-			System.Diagnostics.Debug.WriteLine("CLICKED CAR BUTTON!");
-			System.Diagnostics.Debug.WriteLine(num);
-			Car = num;
-		}
-
-		void AddStation(string num)
-		{
-			System.Diagnostics.Debug.WriteLine("CLICKED STATION BUTTON!");
-			System.Diagnostics.Debug.WriteLine(num);
-			Station = num;
-		}
 	}
 }

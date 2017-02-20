@@ -15,29 +15,6 @@ namespace Borgarverk.Droid
 		{
 			base.OnCreate(bundle);
 			SetContentView(Resource.Layout.FormEntryView);
-			/* Gæti þurft að nota seinna
-			string[] arr = Resources.GetStringArray(Resource.Array.cars);*/
-
-			Spinner carSpinner = FindViewById<Spinner>(Resource.Id.carSpinner);
-			Spinner stationSpinner = FindViewById<Spinner>(Resource.Id.stationSpinner);
-
-			ArrayAdapter carAdapter = ArrayAdapter.CreateFromResource(
-				this,
-				Resource.Array.cars,
-				Android.Resource.Layout.SimpleSpinnerItem);
-
-			carAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-
-			carSpinner.Adapter = carAdapter;
-
-			ArrayAdapter stationAdapter = ArrayAdapter.CreateFromResource(
-				this,
-				Resource.Array.stations,
-				Android.Resource.Layout.SimpleSpinnerItem);
-
-			stationAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-
-			stationSpinner.Adapter = stationAdapter;
 		}
 
 	}

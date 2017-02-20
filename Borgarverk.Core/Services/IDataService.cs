@@ -6,9 +6,9 @@ namespace Borgarverk.Core.Services
 	public interface IDataService
 	{
 		List<FormEntry> FormsMatching(string nameFilter);
-		void Insert(FormEntry kitten);
-		void Update(FormEntry kitten);
-		void Delete(FormEntry kitten);
+		void Insert(FormEntry formEntry);
+		void Update(FormEntry formEntry);
+		void Delete(FormEntry formEntry);
 		int Count { get; }
 	}
 }
